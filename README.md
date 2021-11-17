@@ -3,19 +3,20 @@
 # English
 Script written in Python with ♥ to delete all the empty folders (Windows).
 
-I built this project primarily to solve a problem I had. I have lots of folders into my USB and I wanted to remove all the empty folders, but I wanted to be sure that I was deleting real empty folders. So I had two options, open each folder and check if was empty (there were thousands of folders) or practice Python and design myself a script to do it for me, and here we are😊
+I built this project primarily to solve a problem I had. I have lots of folders on my USB and I wanted to remove all the empty folders, but I wanted to be sure that I was deleting real empty folders. So I had two options, open each folder and check if was empty (there were thousands of folders) or practice Python and design myself a script to do it for me, and here we are😊
 
 ## How to use
 1. Download the .py file.
-2. Copy it into the main folder you want analyze to remove all the empty folders.
+2. Copy it into the main folder you want to analyze to remove all the empty folders.
 3. Open the .py file. It will ask you the Path Option, you must type "CURRENT".
 4. DONE.
 
 ### Path Options
-You will have three options to choose where execute this script:
-- Desktop: If the main folder is ubicated in Desktop. This option will ask you the name of the main folder you want to looking for empty folders.
-- Downloads: If the main folder is ubicated in Downloads. This option will ask you the name of the main folder you want to looking for empty folders.
-- Current: If you copy the .py file into the same folder you want to analyze, it will automatically do it for you.
+You will have three options to choose where to execute this script:
+- Desktop: If the main folder is ubicated in Desktop. This option will ask you the name of the main folder you want to look for empty folders.
+- Downloads: If the main folder is ubicated in Downloads. This option will ask you the name of the main folder you want to look for empty folders.
+- Current: If you copy the .py file into the same folder you want to analyze, it will automatically do it for you
+
 
 # Español
 Script escrito en Python con ♥ para eliminar todas las carpetas vacías (Windows)
