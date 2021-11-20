@@ -1,38 +1,37 @@
 """ Python program to delete empty folders"""
 
 import os
-
-# Función principal que borra todas las carpetas vacías
-# Si una carpeta contiene otra carpeta y está vacía, se llamará de forma recursiva y la borrará
+# Main function that deletes all the empty folders
+# If a folder contains another and it's empty, a recursive function will be called and this folder will be deleted
 def deleteEmptyFolders(path):
     """
-    Función que borra todas las carpetas vacías a partir de una ruta pasada como parámetro
-    @param ruta: ruta de la carpeta que se desea analizar las carpetas vacías
+    Function that deletes all empty folders from a path passed as parameter
+    @param path: path of the folder to be scanned for empty folders
     """
 
     dirs = os.listdir(path)
 
-    # Recorremos todas las carpetas de esa ruta
+    # Iterate all the folders from this path
     for carpeta in dirs:
         subfolder = path + carpeta
-        # Comprobamos si el contenido es una carpeta
+        # Probe if the content is a folder
         if (os.path.isdir(subfolder)):
-            # Comprobamos si está vacía, en ese caso la borramos
+            # Probe if it's empty to delete it
             if (isEmpty(subfolder)):
                 os.rmdir(subfolder)
-            # Sino, llamamos a un método recursivo para que borre las posibles subcarpetas vacías
+            # Otherwise, a recursive method will be called to delete the empty subfolders
             else:
                 deleteEmptyFolders(subfolder + "/")
-                # Si la carpeta raíz se ha quedado vacía, borrarla
+                # If the main folder is empty, delete it
                 if (isEmpty(subfolder)):
                     os.rmdir(subfolder)
 
 
 def isEmpty(folder):
     """
-    Función que comprueba si una carpeta está vacía retornando true o false en caso contrario
-    Se considera una carpeta vacía aquella que no contiene ni ficheros ni otras carpetas (aunque estén vacías)
-    @param: carpeta a comprobar si está vacía o no
+    Function that checks if a folder is empty returning true or false
+    An empty folder is considered one that doesn't contain files or others folders (even if they're empty)
+    @param folder: folder to check if it's empty or not
     """
     if (len(os.listdir(folder)) == 0):
         return True
@@ -55,10 +54,10 @@ while (not validIOption):
     option = (input("Insert your path option: ")).upper()
     if (option == "DESKTOP"):
         validIOption = True
-        path = desktop_path + input("Introduce el nombre de la carpeta raíz a analizar: ") + "\\"
+        path = desktop_path + input("Insert main folder name: ") + "\\"
     if (option == "DOWNLOADS"):
         validIOption = True
-        path = downloads_path + input("Introduce el nombre de la carpeta raíz a analizar: ") + "\\"
+        path = downloads_path + input("Insert main folder name: ") + "\\"
     if (option == "CURRENT"):
         validIOption = True
         path = current_path
@@ -76,8 +75,8 @@ if (os.path.exists(path)):
     print(os.listdir(path))
 
 else:
-    print("\nERROR: El nombre de la carpeta no existe")
+    print("\nERROR: Name's folder doesn't exist")
     exit
 
-# Pulsar tecla para salir de la ventana de comandos
+# Press any key to exit
 input()
