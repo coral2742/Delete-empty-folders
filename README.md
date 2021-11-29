@@ -35,8 +35,8 @@ He realizado este proyecto principalmente para resolver un problema que he tenid
 
 ### Path Options
 Tendrás tres opciones para escoger dónde ejecutar el script:
-- Desktop: Si la carpeta principal que quieres analizar está ubicada en el Escritorio. Esta opción the pedirá el nombre de la carpeta que quieres analizar de carpetas vacías.
-- Downloads: Si la carpeta princiapk que quieres analizar está ubicada en Descargas. Esta opción te pedirá el nombre de la carpeta que quieres analizar de carpetas vacías.
+- Desktop: Si la carpeta principal que quieres analizar está ubicada en el Escritorio. Esta opción te pedirá el nombre de la carpeta que quieres analizar de carpetas vacías.
+- Downloads: Si la carpeta principal que quieres analizar está ubicada en Descargas. Esta opción te pedirá el nombre de la carpeta que quieres analizar de carpetas vacías.
 - Current: Si copias el archivo .py dentro de la carpeta que quieres analizar, lo hará automáticamente por ti.
 
 
