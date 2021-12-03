@@ -1,4 +1,7 @@
-""" Python program to delete empty folders"""
+'''
+Python program to delete empty folders
+Program written with ♥ by @coral2742
+'''
 
 import os
 # Main function that deletes all the empty folders
